@@ -1,0 +1,257 @@
+<!doctype html>
+<html>
+
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>NUCES App Assignment1 - i110173</title>
+
+<link rel="shortcut icon" href="img/favicon.ico"/>
+    
+<link href="jqueryStuff/jquery.mobile-1.4.5.min.css" rel="stylesheet">
+<script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+<script src="jqueryStuff/jquery.mobile-1.4.5.min.js"></script>
+
+<style>
+th {
+    border-bottom: 1px solid #d6d6d6;
+}
+
+tr:nth-child(even) {
+    background: #e9e9e9;
+}
+</style>
+</head>
+
+<body>
+<div data-role="page" id="homepage">
+	<div data-role="header" data-theme="b">
+    	<center><img src="img/logo.png"/></center>
+		<h1>National University of Computer and Emerging Sciences</h1>
+    </div>
+    <div data-role="main" class="ui-content">
+    	<ul data-role="listview" data-inset="true">
+        	<li><a href="#campuses">Campuses</a></li>
+            <li><a href="#admission">Admission</a></li>
+            <li><a href="#departments">Departments</a></li>
+        </ul>
+    </div>
+    <div data-role="footer" data-theme="b">
+    <h4>Copyrights &copy; 2015, Hassam Mahmood. All Rights Reserved.</h4>
+    </div>
+</div>
+
+<div data-role="page" id="campuses">
+	<div data-role="panel" id="isb"> 
+    	<h2 align="center">ISB Campus</h2>
+        <p>Phone number: 051-111 128 128</p>
+    	<p>Address: A.K Brohi Road, H-11<br>Islamabad, Pakistan</p>
+    	<p>Email: isbcampus@nu.edu.pk</p>
+    	<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13284.11884943488!2d73.016544!3d33.656392!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x42849753112383b!2sNational+University+of+Computer+%26+Emerging+Sciences!5e0!3m2!1sen!2s!4v1424553346155" width="240" height="300" frameborder="0" style="border:0"></iframe>
+    	<br><center><a href="#pageone" data-rel="close" class="ui-btn ui-btn-inline ui-shadow ui-corner-all ui-btn-b ui-icon-delete ui-btn-icon-left">Close</a></center>
+  	</div>
+    <div data-role="panel" id="lhr"> 
+    	<h2 align="center">LHR Campus</h2>
+        <p>Phone number: 042-111 128 128</p>
+    	<p>Address: Milaad Street<br>Lahore 54000, Pakistan</p>
+    	<p>Email: lhrcampus@nu.edu.pk</p>
+    	<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13610.26833443004!2d74.303388!3d31.481093!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x47e934f4cd34790!2sNational+University+of+Computer+and+Emerging+Sciences!5e0!3m2!1sen!2s!4v1424553989681" width="240" height="300" frameborder="0" style="border:0"></iframe>
+    	<br><center><a href="#pageone" data-rel="close" class="ui-btn ui-btn-inline ui-shadow ui-corner-all ui-btn-b ui-icon-delete ui-btn-icon-left">Close</a></center>
+  	</div>
+    <div data-role="panel" id="khi"> 
+    	<h2 align="center">KHI Campus</h2>
+        <p>Phone number: 021-111 128 128</p>
+    	<p>Address: St-4 Sec 17-D, NH<br>Karachi, Pakistan</p>
+    	<p>Email: khicampus@nu.edu.pk</p>
+    	<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3620.1169201527105!2d67.06993899999999!3d24.859856000000004!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb33e9f63accb2b%3A0xb31d31d3fd42234d!2sFAST!5e0!3m2!1sen!2s!4v1424554532404" width="240" height="300" frameborder="0" style="border:0"></iframe>
+    	<br><center><a href="#pageone" data-rel="close" class="ui-btn ui-btn-inline ui-shadow ui-corner-all ui-btn-b ui-icon-delete ui-btn-icon-left">Close</a></center>
+  	</div>
+    <div data-role="panel" id="psh"> 
+    	<h2 align="center">PSH Campus</h2>
+        <p>Phone number: 091-111 128 128</p>
+    	<p>Address: 160 Ind Estate, HJR<br>Peshawar KPK, Pakistan</p>
+    	<p>Email: pshcampus@nu.edu.pk</p>
+    	<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3308.469789192493!2d71.427183!3d33.980464999999995!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38d9105fb03d7d69%3A0xa6e5687326894f74!2sFast+University+Peshawar+Campus!5e0!3m2!1sen!2s!4v1424554612265" width="240" height="300" frameborder="0" style="border:0"></iframe>
+    	<br><center><a href="#pageone" data-rel="close" class="ui-btn ui-btn-inline ui-shadow ui-corner-all ui-btn-b ui-icon-delete ui-btn-icon-left">Close</a></center>
+  	</div>
+    <div data-role="panel" id="fsd"> 
+    	<h2 align="center">FSD Campus</h2>
+        <p>Phone number: 041-111 128 128</p>
+    	<p>Address: Loonaywala, Chiniot Rd<br>Faisalabad, Pakistan</p>
+    	<p>Email: fsdcampus@nu.edu.pk</p>
+    	<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13592.952292789843!2d73.03731886764108!3d31.599935665813845!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39223f08dbbe5fa5%3A0xb45ea8924093c29d!2sNational+University+of+Computer+and+Emerging+Sciences+Faisalabad-Chiniot+Campus!5e0!3m2!1sen!2s!4v1424554696051" width="240" height="300" frameborder="0" style="border:0"></iframe>
+    	<br><center><a href="#pageone" data-rel="close" class="ui-btn ui-btn-inline ui-shadow ui-corner-all ui-btn-b ui-icon-delete ui-btn-icon-left">Close</a></center>
+  	</div>
+    
+	<div data-role="header" data-theme="b">
+    	<center><img src="img/logo.png"/></center>
+		<h1>National University of Computer and Emerging Sciences</h1>
+    </div>
+    <div data-role="main" class="ui-content">
+    <h2 style="font-style:italic">Campuses</h2>
+    	<ul data-role="listview" data-inset="true">
+        	<li><a href="#isb">ISB</a></li>
+            <li><a href="#lhr">LHR</a></li>
+            <li><a href="#khi">KHI</a></li>
+            <li><a href="#psh">PSH</a></li>
+            <li><a href="#fsd">FSD</a></li>
+        </ul>
+        
+        <a href="#homepage">Go Back to Main Page</a>
+    </div>
+    <div data-role="footer" data-theme="b">
+    <h4>Copyrights &copy; 2015, Hassam Mahmood. All Rights Reserved.</h4>
+    </div>
+</div>
+
+<div data-role="page" id="admission">
+	<div data-role="header" align="center" data-theme="b">
+    	<center><img src="img/logo.png"/></center>
+		<h1>National University of Computer and Emerging Sciences</h1>
+    </div>
+    <div data-role="main" class="ui-content">
+    <h2 style="font-style:italic">Admission Schedule</h2>
+    	<table data-role="table" class="ui-responsive ui-shadow" id="myTable">
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th><strong>BBA &amp; BS</strong></th>
+                        <th><strong>MBA, MS &amp; PhD</strong></th>
+                        <th><strong>PhD</strong></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>&nbsp;&nbsp;Application Submission</td>
+                        <td>Jun 9 - 28 (Mon-Sat)</td>
+                        <td>Jun 9 - 28 (Mon-Sat)</td>
+                        <td>Jan 31, 2015 (Sat)</td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;&nbsp;Admission Tests</td>
+                        <td>Jul 1 - 7 (Tue-Mon)</td>
+                        <td>Jul 1 - 7 (Tue-Mon)</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;&nbsp;Declaration of selected Candidates</td>
+                        <td>Jul 19 (Sat)</td>
+                        <td>Jul 12 (Sat)</td>
+                         <td>-</td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;&nbsp;Interviews</td>
+                        <td></td>
+                        <td>Jul 15 - 17 (Tue-Thu)</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;&nbsp;Admission Formalities</td>
+                        <td>Jul 21 - 24 (Mon-Thu)</td>
+                        <td>Jul 28 - 30 (Mon-Wed)</td>
+                        <td>-</td>
+                    </tr>
+                </tbody>
+            </table>
+        
+        <br><a href="#homepage">Go Back to Main Page</a>
+    </div>
+    <div data-role="footer" data-theme="b">
+    <h4>Copyrights &copy; 2015, Hassam Mahmood. All Rights Reserved.</h4>
+    </div>
+</div>
+
+<div data-role="page" id="departments">
+	<div data-role="header" data-theme="b">
+    	<center><img src="img/logo.png"/></center>
+		<h1>National University of Computer and Emerging Sciences</h1>
+    </div>
+    <div data-role="main" class="ui-content">
+    <h2 style="font-style:italic">Departments</h2>
+    	<ul data-role="listview" data-inset="true">
+            <li><a href="#ee">Dept of Electrical Engineering</a></li>
+        	<li><a href="#cs">Dept of Computer Science</a></li>
+            <li><a href="#mng">FAST School of Management</a></li>
+        </ul>
+        
+        <a href="#homepage">Go Back to Main Page</a>
+    </div>
+    <div data-role="footer" data-theme="b">
+    <h4>Copyrights &copy; 2015, Hassam Mahmood. All Rights Reserved.</h4>
+    </div>
+</div>
+
+<div data-role="page" id="cs">
+	<div data-role="header" data-theme="b">
+    	<center><img src="img/logo.png"/></center>
+		<h1>National University of Computer and Emerging Sciences</h1>
+    </div>
+    <div data-role="main" class="ui-content">
+    <h2 style="font-style:italic">Dept of Computer Science</h2>
+    	<div data-role="collapsible" data-theme="b" data-content-theme="a">
+      		<h1>BS Computer Science</h1>
+      		<p>I'm the expanded content.</p>
+    	</div>
+        <div data-role="collapsible" data-theme="b" data-content-theme="a">
+      		<h1>MS Computer Science</h1>
+      		<p>I'm the expanded content.</p>
+    	</div>
+        <div data-role="collapsible" data-theme="b" data-content-theme="a">
+      		<h1>PhD Computer Science</h1>
+      		<p>I'm the expanded content.</p>
+    	</div>
+        
+        <br><a href="#departments">Go Back to Main Page</a>
+    </div>
+    <div data-role="footer" data-theme="b">
+    <h4>Copyrights &copy; 2015, Hassam Mahmood. All Rights Reserved.</h4>
+    </div>
+</div>
+
+<div data-role="page" id="ee">
+	<div data-role="header" data-theme="b">
+    	<center><img src="img/logo.png"/></center>
+		<h1>National University of Computer and Emerging Sciences</h1>
+    </div>
+    <div data-role="main" class="ui-content">
+    <h2 style="font-style:italic">Dept of Electrical Engineering</h2>
+    	<div data-role="collapsible" data-theme="b" data-content-theme="a">
+      		<h1>BS Electrical Engineering</h1>
+      		<p>I'm the expanded content.</p>
+    	</div>
+        <div data-role="collapsible" data-theme="b" data-content-theme="a">
+      		<h1>MS Electrical Engineering</h1>
+      		<p>I'm the expanded content.</p>
+    	</div>
+        
+        <br><a href="#departments">Go Back to Main Page</a>
+    </div>
+    <div data-role="footer" data-theme="b">
+    <h4>Copyrights &copy; 2015, Hassam Mahmood. All Rights Reserved.</h4>
+    </div>
+</div>
+
+<div data-role="page" id="mng">
+	<div data-role="header" data-theme="b">
+    	<center><img src="img/logo.png"/></center>
+		<h1>National University of Computer and Emerging Sciences</h1>
+    </div>
+    <div data-role="main" class="ui-content">
+    <h2 style="font-style:italic">FAST School of Management</h2>
+        <div data-role="collapsible" data-theme="b" data-content-theme="a">
+      		<h1>BBA</h1>
+      		<p>I'm the expanded content.</p>
+    	</div>
+        <div data-role="collapsible" data-theme="b" data-content-theme="a">
+      		<h1>MBA</h1>
+      		<p>I'm the expanded content.</p>
+    	</div>
+        
+        <br><a href="#departments">Go Back to Main Page</a>
+    </div>
+    <div data-role="footer" data-theme="b">
+    <h4>Copyrights &copy; 2015, Hassam Mahmood. All Rights Reserved.</h4>
+    </div>
+</div>
+</body>
+
+</html>
